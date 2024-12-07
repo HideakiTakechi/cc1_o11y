@@ -1,9 +1,9 @@
 all:
   vars:
     hosts_ips:
-      S1: ISUCON_TRY_SERVER1_IP
-      S2: ISUCON_TRY_SERVER2_IP
-      S3: ISUCON_TRY_SERVER3_IP
+      S1: ISUCON_SERVER1_IP
+      S2: ISUCON_SERVER2_IP
+      S3: ISUCON_SERVER3_IP
     ansible_user: "isucon"
 
   children:
