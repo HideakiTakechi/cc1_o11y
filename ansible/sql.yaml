@@ -10,8 +10,9 @@
         group: isucon
         mode: "0755"
       with_items:
-        - "initdb.d/00_create_database.sql"
-        - "initdb.d/10_schema.sql"
+        - "0-init.sql"
+        - "1-schema.sql"
+        - "2-master-data.sql"
         - "init.sh"
       notify: restart_mysql
 
