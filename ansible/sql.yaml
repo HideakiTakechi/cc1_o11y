@@ -1,5 +1,5 @@
 - name: Deploy MySQL related sources
-  hosts: webapp
+  hosts: all
   become: true
   tasks:
     - name: Copy specific SQL files to the target server
