@@ -19,12 +19,12 @@
   tasks:
     - name: Transfer binary to remote server
       ansible.builtin.copy:
-        src: ../webapp/go/isupipe
-        dest: /home/isucon/webapp/go/isupipe
+        src: ../webapp/go/isuride
+        dest: /home/isucon/webapp/go/isuride
         mode: '0755'
 
-    - name: Restart isupipe-go.service
+    - name: Restart isuride-go.service
       ansible.builtin.systemd:
-        name: isupipe-go.service
+        name: isuride-go.service
         state: restarted
       become: true
